@@ -2,7 +2,9 @@ package org.accesodatos.hogwarts.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "estudiante_asignatura")
 public class EstudianteAsignatura {
@@ -23,36 +25,4 @@ public class EstudianteAsignatura {
     private Asignatura asignatura;
 
     private Double calificacion;
-
-    public EstudianteAsignaturaId getId() {
-        return id;
-    }
-
-    public void setId(EstudianteAsignaturaId id) {
-        this.id = id;
-    }
-
-    public Student getEstudiante() {
-        return estudiante;
-    }
-
-    public void setEstudiante(Student estudiante) {
-        this.estudiante = estudiante;
-    }
-
-    public Asignatura getAsignatura() {
-        return asignatura;
-    }
-
-    public void setAsignatura(Asignatura asignatura) {
-        this.asignatura = asignatura;
-    }
-
-    public Double getCalificacion() {
-        return calificacion;
-    }
-
-    public void setCalificacion(Double calificacion) {
-        this.calificacion = calificacion;
-    }
 }

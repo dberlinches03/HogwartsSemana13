@@ -1,6 +1,6 @@
 package org.accesodatos.hogwarts.mapper;
 
-import org.accesodatos.hogwarts.dto.MascotaDTO;
+import org.accesodatos.hogwarts.dto.response.MascotaDTO;
 import org.accesodatos.hogwarts.model.Mascota;
 
 public class MascotaMapper {

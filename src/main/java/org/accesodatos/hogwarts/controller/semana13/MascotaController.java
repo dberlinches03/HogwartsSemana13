@@ -1,6 +1,6 @@
-package org.accesodatos.hogwarts.controller;
+package org.accesodatos.hogwarts.controller.semana13;
 
-import org.accesodatos.hogwarts.dto.MascotaDTO;
+import org.accesodatos.hogwarts.dto.response.MascotaDTO;
 import org.accesodatos.hogwarts.service.MascotaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,32 +1,11 @@
 package org.accesodatos.hogwarts.service;
 
-import org.accesodatos.hogwarts.dto.EstudianteDTO;
-import org.accesodatos.hogwarts.mapper.EstudianteMapper;
-import org.accesodatos.hogwarts.repository.StudentRepository;
-import org.springframework.stereotype.Service;
+import org.accesodatos.hogwarts.dto.request.create.EstudianteCreateDTO;
+import org.accesodatos.hogwarts.dto.request.update.EstudianteUpdateDTO;
+import org.accesodatos.hogwarts.dto.response.EstudianteDTO;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
+public interface StudentService {
 
-@Service
-public class StudentService {
-
-    private final StudentRepository repo;
-
-    public StudentService(StudentRepository repo) {
-        this.repo = repo;
-    }
-
-    public List<EstudianteDTO> findAll() {
-        return repo.findAll()
-                .stream()
-                .map(EstudianteMapper::toDto)
-                .collect(Collectors.toList());
-    }
-
-    public Optional<EstudianteDTO> findById(Long id) {
-        return repo.findById(id)
-                .map(EstudianteMapper::toDto);
-    }
+    EstudianteDTO create(EstudianteCreateDTO estudianteDTO);
+    EstudianteDTO update(Long id, EstudianteUpdateDTO dto);
 }
