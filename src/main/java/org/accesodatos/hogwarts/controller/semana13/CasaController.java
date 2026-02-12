@@ -1,4 +1,4 @@
-package org.accesodatos.hogwarts.controller;
+package org.accesodatos.hogwarts.controller.semana13;
 
 import org.accesodatos.hogwarts.dto.CasaDTO;
 import org.accesodatos.hogwarts.service.CasaService;

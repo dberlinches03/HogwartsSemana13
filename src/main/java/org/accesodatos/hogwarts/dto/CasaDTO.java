@@ -1,7 +1,10 @@
 package org.accesodatos.hogwarts.dto;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class CasaDTO {
 
     private Long id;
@@ -11,17 +14,4 @@ public class CasaDTO {
     private ProfesorDTO jefe;
     private List<String> estudiantes;
 
-    public Long getId() { return id; }
-    public String getNombre() { return nombre; }
-    public String getFundador() { return fundador; }
-    public String getFantasma() { return fantasma; }
-    public ProfesorDTO getJefe() { return jefe; }
-    public List<String> getEstudiantes() { return estudiantes; }
-
-    public void setId(Long id) { this.id = id; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
-    public void setFundador(String fundador) { this.fundador = fundador; }
-    public void setFantasma(String fantasma) { this.fantasma = fantasma; }
-    public void setJefe(ProfesorDTO jefe) { this.jefe = jefe; }
-    public void setEstudiantes(List<String> estudiantes) { this.estudiantes = estudiantes; }
 }

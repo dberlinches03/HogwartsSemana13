@@ -1,9 +1,12 @@
 package org.accesodatos.hogwarts.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Objects;
 
+@Data
 @Embeddable
 public class EstudianteAsignaturaId implements Serializable {
 
@@ -19,25 +22,6 @@ public class EstudianteAsignaturaId implements Serializable {
         this.idEstudiante = idEstudiante;
         this.idAsignatura = idAsignatura;
     }
-
-    // GETTERS
-    public Long getIdEstudiante() {
-        return idEstudiante;
-    }
-
-    public Long getIdAsignatura() {
-        return idAsignatura;
-    }
-
-    // SETTERS
-    public void setIdEstudiante(Long idEstudiante) {
-        this.idEstudiante = idEstudiante;
-    }
-
-    public void setIdAsignatura(Long idAsignatura) {
-        this.idAsignatura = idAsignatura;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

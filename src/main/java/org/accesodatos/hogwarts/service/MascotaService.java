@@ -1,6 +1,6 @@
 package org.accesodatos.hogwarts.service;
 
-import org.accesodatos.hogwarts.dto.MascotaDTO;
+import org.accesodatos.hogwarts.dto.response.MascotaDTO;
 import org.accesodatos.hogwarts.mapper.MascotaMapper;
 import org.accesodatos.hogwarts.repository.MascotaRepository;
 import org.springframework.stereotype.Service;
